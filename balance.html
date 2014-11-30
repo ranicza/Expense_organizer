@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Balance</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1> Expense organizer</h1>
+    <div class = "row">
+        <div class = "col-md-4 col-xs-4">
+            <h3> Categories:</h3>
+            <ul id="categories">
+            </ul>
+
+            <form id ='category-form'>
+                <div class="form-group">
+                    <label for = 'category'>New category</label>
+                    <input type = 'text' class="form-control" id ='category'>
+                </div>
+                <button id = "add-cat" type="submit" class="btn btn-primary" >Add</button>
+            </form>
+        </div>
+
+            <div class = "col-md-4 col-xs-4">
+                <h3> Add purchase:</h3>
+                <div id ='new-purchase'>
+                    <form id = "form-purchases">
+                        <div class = 'form-group'>
+                            <label for = 'purchase'>Description</label>
+                            <input type = 'text' class="form-control" id ='purchase'>
+                        </div>
+                        <div class ='form-group'>
+                            <label for = 'price'>Price</label>
+                            <input type = 'text' class="form-control" id ='price'>
+                        </div>
+                        <div class ='form-group'>
+                            <label for = 'quantity'>Quantity</label>
+                            <input type = 'text' class="form-control" id ='quantity'>
+                        </div>
+                        <button id = "track" type="submit" class="btn btn-primary" >Track!</button>
+                    </form>
+                </div>
+            </div>
+
+
+        <div class = "col-md-4 col-xs-4" id = 'results'>
+            <h3>Purchases <span id="active-category"></span></h3>
+            <table class="table table-striped" id = "add-table">
+                <tr>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total cost</th>
+                </tr>
+
+            </table>
+            <div id ="sum">
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+

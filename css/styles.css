@@ -1,0 +1,21 @@
+
+#track, #add-cat{
+    margin-top:3%;
+    border-radius: 45%;
+}
+#purchase, #price, #quantity, #category{
+    width: 60%;
+}
+#add-table{
+    display: none;
+}
+#categories li {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+#categories li:hover {
+    text-decoration: underline;
+}
+
+
